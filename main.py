@@ -27,7 +27,7 @@ def main():
         'total_SAT': ['mean', 'std']  # para calcular média e desvio padrão
     }).reset_index()
 
-    # Flatten MultiIndex columns
+
     stats_borough.columns = ['borough', 'num_schools', 'average_SAT', 'std_SAT']
     largest_std_dev = stats_borough\
     .sort_values(by='std_SAT', ascending=False)\
@@ -48,7 +48,7 @@ def main():
     plt.savefig('hist_total_SAT.png')
     plt.show()
 
-    # 2) Boxplot por borough (sem usar `labels` / `tick_labels`)
+    # 2) Boxplot por borough
     if 'borough' in schools.columns:
         data = [grp['total_SAT'].dropna().values for _, grp in schools.groupby('borough')]
         labels = [str(b) for b, _ in schools.groupby('borough')]
@@ -64,7 +64,7 @@ def main():
         plt.savefig('boxplot_by_borough.png')
         plt.show()
 
-    # 3) Top 10 escolas por total_SAT (barra)
+    # 3) Top 10 escolas por total_SAT
     plt.figure(figsize=(10, 6))
     plt.barh(top_10_schools['school_name'][::-1], top_10_schools['total_SAT'][::-1], color='C1')
     plt.title('Top 10 escolas por total_SAT')
@@ -89,7 +89,7 @@ def main():
         plt.savefig('scatter_math_reading.png')
         plt.show()
 
-    # 5) Média e desvio padrão por borough (barra com erro) — agrupa a partir de `schools`
+    # 5) Média e desvio padrão por borough
     if 'borough' in schools.columns:
         stats = schools.groupby('borough')['total_SAT'].agg(['mean', 'std', 'count']).dropna()
         plt.figure(figsize=(10, 6))
