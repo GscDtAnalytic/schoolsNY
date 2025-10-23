@@ -1,35 +1,35 @@
 <h1>Visão Geral do Projeto</h1>  
 
-<p>  Este projeto apresenta uma análise abrangente dos dados de desempenho das escolas públicas de Nova York, utilizando dados do SAT (Scholastic Assessment Test) para identificar padrões, disparidades e oportunidades de melhoria no sistema educacional da cidade.</p>  
+<h3>  Este projeto apresenta uma análise abrangente dos dados de desempenho das escolas públicas de Nova York, utilizando dados do SAT (Scholastic Assessment Test) para identificar padrões, disparidades e oportunidades de melhoria no sistema educacional da cidade.</h3>  
 
 <h2>Objetivo</h2>  
 
 <h3>Fornecer insights baseados em dados para tomadores de decisão educacional, especialmente para:</h3>
 
-<h3>Identificar escolas de alto e baixo desempenho</h3>
-<h3>Analisar disparidades geográficas entre os cinco distritos (boroughs)</h3>
-<h3>Propor estratégias de melhoria baseadas em evidências</h3>
-<h3>Subsidiar políticas públicas educacionais</h3>
+<p>Identificar escolas de alto e baixo desempenho</p>
+<p>Analisar disparidades geográficas entre os cinco distritos (boroughs)</p>
+<p>Propor estratégias de melhoria baseadas em evidências</p>
+<p>Subsidiar políticas públicas educacionais</p>
 
 
 <h2>Dados Utilizados(Disponibilizados por DATACAMP):</h2>  
 
-<h3>Dataset Principal: schools.csv</h3>
+<p>Dataset Principal: schools.csv</p>
 
-<h3>Total de Escolas: ~400 escolas públicas de NYC</h3>
+<p>Total de Escolas: ~400 escolas públicas de NYC</p>
 
 <h2>Variáveis Analisadas:</h2>
 
-<h3>school_name: Nome da escola</h3>  
+<p>school_name: Nome da escola</p>  
 
-<h3>borough: Distrito (Manhattan, Brooklyn, Queens, Bronx, Staten Island)</h3>  
+<p>borough: Distrito (Manhattan, Brooklyn, Queens, Bronx, Staten Island)</p>  
 
-<h3>average_math: Pontuação média em matemática</h3>  
+<p>average_math: Pontuação média em matemática</p>  
 
-<h3>average_reading: Pontuação média em leitura</h3>  
+<p>average_reading: Pontuação média em leitura</p>  
 
-<h3>average_writing: Pontuação média em escrita</h3>  
+<p>average_writing: Pontuação média em escrita</p>  
 
-<h3>percent_tested: Percentual de estudantes que fizeram o teste</h3>
+<p>percent_tested: Percentual de estudantes que fizeram o teste</p>
 
-<h3>building_code: Código do prédio escolar</h3>  
+<p>building_code: Código do prédio escolar</p>  
